@@ -1,0 +1,914 @@
+[
+    {
+        "infinitive": "manger",
+        "es": "comer",
+        "conjugations": {
+            "je": { "fr": "mange", "es": "como" },
+            "j'": null,
+            "tu": { "fr": "manges", "es": "comes" },
+            "il": { "fr": "mange", "es": "come" },
+            "elle": { "fr": "mange", "es": "come" },
+            "on": { "fr": "mange", "es": "come" },
+            "nous": { "fr": "mangeons", "es": "comemos" },
+            "vous": { "fr": "mangez", "es": "come" },
+            "ils": { "fr": "mangent", "es": "comen" },
+            "elles": { "fr": "mangent", "es": "comen" }
+        }
+    },
+    {
+        "infinitive": "finir",
+        "es": "terminar",
+        "conjugations": {
+            "je": { "fr": "finis", "es": "termino" },
+            "j'": null,
+            "tu": { "fr": "finis", "es": "terminas" },
+            "il": { "fr": "finit", "es": "termina" },
+            "elle": { "fr": "finit", "es": "termina" },
+            "on": { "fr": "finit", "es": "termina" },
+            "nous": { "fr": "finissons", "es": "terminamos" },
+            "vous": { "fr": "finissez", "es": "termina" },
+            "ils": { "fr": "finissent", "es": "terminan" },
+            "elles": { "fr": "finissent", "es": "terminan" }
+        }
+    },
+    {
+        "infinitive": "acheter",
+        "es": "comprar",
+        "conjugations": {
+            "je": null,
+            "j'": { "fr": "achète", "es": "compro" },
+            "tu": { "fr": "achètes", "es": "compras" },
+            "il": { "fr": "achète", "es": "compra" },
+            "elle": { "fr": "achète", "es": "compra" },
+            "on": { "fr": "achète", "es": "compra" },
+            "nous": { "fr": "achetons", "es": "compramos" },
+            "vous": { "fr": "achetez", "es": "compra" },
+            "ils": { "fr": "achètent", "es": "compran" },
+            "elles": { "fr": "achètent", "es": "compran" }
+        }
+    },
+    {
+        "infinitive": "regarder",
+        "es": "mirar",
+        "conjugations": {
+            "je": { "fr": "regarde", "es": "miro" },
+            "j'": null,
+            "tu": { "fr": "regardes", "es": "miras" },
+            "il": { "fr": "regarde", "es": "mira" },
+            "elle": { "fr": "regarde", "es": "mira" },
+            "on": { "fr": "regarde", "es": "mira" },
+            "nous": { "fr": "regardons", "es": "miramos" },
+            "vous": { "fr": "regardez", "es": "mira" },
+            "ils": { "fr": "regardent", "es": "miran" },
+            "elles": { "fr": "regardent", "es": "miran" }
+        }
+    },
+    {
+        "infinitive": "parler",
+        "es": "hablar",
+        "conjugations": {
+            "je": { "fr": "parle", "es": "hablo" },
+            "j'": null,
+            "tu": { "fr": "parles", "es": "hablas" },
+            "il": { "fr": "parle", "es": "habla" },
+            "elle": { "fr": "parle", "es": "habla" },
+            "on": { "fr": "parle", "es": "habla" },
+            "nous": { "fr": "parlons", "es": "hablamos" },
+            "vous": { "fr": "parlez", "es": "habla" },
+            "ils": { "fr": "parlent", "es": "hablan" },
+            "elles": { "fr": "parlent", "es": "hablan" }
+        }
+    },
+    {
+        "infinitive": "vendre",
+        "es": "vender",
+        "conjugations": {
+            "je": { "fr": "vends", "es": "vendo" },
+            "j'": null,
+            "tu": { "fr": "vends", "es": "vendes" },
+            "il": { "fr": "vend", "es": "vende" },
+            "elle": { "fr": "vend", "es": "vende" },
+            "on": { "fr": "vend", "es": "vende" },
+            "nous": { "fr": "vendons", "es": "vendemos" },
+            "vous": { "fr": "vendez", "es": "vende" },
+            "ils": { "fr": "vendent", "es": "venden" },
+            "elles": { "fr": "vendent", "es": "venden" }
+        }
+    },
+    {
+        "infinitive": "attendre",
+        "es": "esperar",
+        "conjugations": {
+            "je": null,
+            "j'": { "fr": "attends", "es": "espero" },
+            "tu": { "fr": "attends", "es": "esperas" },
+            "il": { "fr": "attend", "es": "espera" },
+            "elle": { "fr": "attend", "es": "espera" },
+            "on": { "fr": "attend", "es": "espera" },
+            "nous": { "fr": "attendons", "es": "esperamos" },
+            "vous": { "fr": "attendez", "es": "espera" },
+            "ils": { "fr": "attendent", "es": "esperan" },
+            "elles": { "fr": "attendent", "es": "esperan" }
+        }
+    },
+    {
+        "infinitive": "répondre",
+        "es": "responder",
+        "conjugations": {
+            "je": { "fr": "réponds", "es": "respondo" },
+            "j'": null,
+            "tu": { "fr": "réponds", "es": "respondes" },
+            "il": { "fr": "répond", "es": "responde" },
+            "elle": { "fr": "répond", "es": "responde" },
+            "on": { "fr": "répond", "es": "responde" },
+            "nous": { "fr": "répondons", "es": "respondemos" },
+            "vous": { "fr": "répondez", "es": "responde" },
+            "ils": { "fr": "répondent", "es": "responden" },
+            "elles": { "fr": "répondent", "es": "responden" }
+        }
+    },
+    {
+        "infinitive": "choisir",
+        "es": "elegir",
+        "conjugations": {
+            "je": { "fr": "choisis", "es": "elijo" },
+            "j'": null,
+            "tu": { "fr": "choisis", "es": "eliges" },
+            "il": { "fr": "choisit", "es": "elige" },
+            "elle": { "fr": "choisit", "es": "elige" },
+            "on": { "fr": "choisit", "es": "elige" },
+            "nous": { "fr": "choisissons", "es": "elegimos" },
+            "vous": { "fr": "choisissez", "es": "elige" },
+            "ils": { "fr": "choisissent", "es": "eligen" },
+            "elles": { "fr": "choisissent", "es": "eligen" }
+        }
+    },
+    {
+        "infinitive": "partir",
+        "es": "marcharse",
+        "conjugations": {
+            "je": { "fr": "pars", "es": "me marcho" },
+            "j'": null,
+            "tu": { "fr": "pars", "es": "te marchas" },
+            "il": { "fr": "part", "es": "se marcha" },
+            "elle": { "fr": "part", "es": "se marcha" },
+            "on": { "fr": "part", "es": "se marcha" },
+            "nous": { "fr": "partons", "es": "nos marchamos" },
+            "vous": { "fr": "partez", "es": "se marcha" },
+            "ils": { "fr": "partent", "es": "se marchan" },
+            "elles": { "fr": "partent", "es": "se marchan" }
+        }
+    },
+    {
+        "infinitive": "sortir",
+        "es": "salir",
+        "conjugations": {
+            "je": { "fr": "sors", "es": "salgo" },
+            "j'": null,
+            "tu": { "fr": "sors", "es": "sales" },
+            "il": { "fr": "sort", "es": "sale" },
+            "elle": { "fr": "sort", "es": "sale" },
+            "on": { "fr": "sort", "es": "sale" },
+            "nous": { "fr": "sortons", "es": "salimos" },
+            "vous": { "fr": "sortez", "es": "sale" },
+            "ils": { "fr": "sortent", "es": "salen" },
+            "elles": { "fr": "sortent", "es": "salen" }
+        }
+    },
+    {
+        "infinitive": "dormir",
+        "es": "dormir",
+        "conjugations": {
+            "je": { "fr": "dors", "es": "duermo" },
+            "j'": null,
+            "tu": { "fr": "dors", "es": "duermes" },
+            "il": { "fr": "dort", "es": "duerme" },
+            "elle": { "fr": "dort", "es": "duerme" },
+            "on": { "fr": "dort", "es": "duerme" },
+            "nous": { "fr": "dormons", "es": "dormimos" },
+            "vous": { "fr": "dormez", "es": "duerme" },
+            "ils": { "fr": "dorment", "es": "duermen" },
+            "elles": { "fr": "dorment", "es": "duermen" }
+        }
+    },
+    {
+        "infinitive": "servir",
+        "es": "servir",
+        "conjugations": {
+            "je": { "fr": "sers", "es": "sirvo" },
+            "j'": null,
+            "tu": { "fr": "sers", "es": "sirves" },
+            "il": { "fr": "sert", "es": "sirve" },
+            "elle": { "fr": "sert", "es": "sirve" },
+            "on": { "fr": "sert", "es": "sirve" },
+            "nous": { "fr": "servons", "es": "servimos" },
+            "vous": { "fr": "servez", "es": "sirve" },
+            "ils": { "fr": "servent", "es": "sirven" },
+            "elles": { "fr": "servent", "es": "sirven" }
+        }
+    },
+    {
+        "infinitive": "lire",
+        "es": "leer",
+        "conjugations": {
+            "je": { "fr": "lis", "es": "leo" },
+            "j'": null,
+            "tu": { "fr": "lis", "es": "lees" },
+            "il": { "fr": "lit", "es": "lee" },
+            "elle": { "fr": "lit", "es": "lee" },
+            "on": { "fr": "lit", "es": "lee" },
+            "nous": { "fr": "lisons", "es": "leemos" },
+            "vous": { "fr": "lisez", "es": "lee" },
+            "ils": { "fr": "lisent", "es": "leen" },
+            "elles": { "fr": "lisent", "es": "leen" }
+        }
+    },
+    {
+        "infinitive": "écrire",
+        "es": "escribir",
+        "conjugations": {
+            "je": null,
+            "j'": { "fr": "écris", "es": "escribo" },
+            "tu": { "fr": "écris", "es": "escribes" },
+            "il": { "fr": "écrit", "es": "escribe" },
+            "elle": { "fr": "écrit", "es": "escribe" },
+            "on": { "fr": "écrit", "es": "escribe" },
+            "nous": { "fr": "écrivons", "es": "escribimos" },
+            "vous": { "fr": "écrivez", "es": "escribe" },
+            "ils": { "fr": "écrivent", "es": "escriben" },
+            "elles": { "fr": "écrivent", "es": "escriben" }
+        }
+    },
+    {
+        "infinitive": "prendre",
+        "es": "tomar",
+        "conjugations": {
+            "je": { "fr": "prends", "es": "tomo" },
+            "j'": null,
+            "tu": { "fr": "prends", "es": "tomas" },
+            "il": { "fr": "prend", "es": "toma" },
+            "elle": { "fr": "prend", "es": "toma" },
+            "on": { "fr": "prend", "es": "toma" },
+            "nous": { "fr": "prenons", "es": "tomamos" },
+            "vous": { "fr": "prenez", "es": "toma" },
+            "ils": { "fr": "prennent", "es": "toman" },
+            "elles": { "fr": "prennent", "es": "toman" }
+        }
+    },
+    {
+        "infinitive": "comprendre",
+        "es": "comprender",
+        "conjugations": {
+            "je": { "fr": "comprends", "es": "comprendo" },
+            "j'": null,
+            "tu": { "fr": "comprends", "es": "comprendes" },
+            "il": { "fr": "comprend", "es": "comprende" },
+            "elle": { "fr": "comprend", "es": "comprende" },
+            "on": { "fr": "comprend", "es": "comprende" },
+            "nous": { "fr": "comprenons", "es": "comprendemos" },
+            "vous": { "fr": "comprenez", "es": "comprende" },
+            "ils": { "fr": "comprennent", "es": "comprenden" },
+            "elles": { "fr": "comprennent", "es": "comprenden" }
+        }
+    },
+    {
+        "infinitive": "apprendre",
+        "es": "aprender",
+        "conjugations": {
+            "je": null,
+            "j'": { "fr": "apprends", "es": "aprendo" },
+            "tu": { "fr": "apprends", "es": "aprendes" },
+            "il": { "fr": "apprend", "es": "aprende" },
+            "elle": { "fr": "apprend", "es": "aprende" },
+            "on": { "fr": "apprend", "es": "aprende" },
+            "nous": { "fr": "apprenons", "es": "aprendemos" },
+            "vous": { "fr": "apprenez", "es": "aprende" },
+            "ils": { "fr": "apprennent", "es": "aprenden" },
+            "elles": { "fr": "apprennent", "es": "aprenden" }
+        }
+    },
+    {
+        "infinitive": "mettre",
+        "es": "poner",
+        "conjugations": {
+            "je": { "fr": "mets", "es": "pongo" },
+            "j'": null,
+            "tu": { "fr": "mets", "es": "pones" },
+            "il": { "fr": "met", "es": "pone" },
+            "elle": { "fr": "met", "es": "pone" },
+            "on": { "fr": "met", "es": "pone" },
+            "nous": { "fr": "mettons", "es": "ponemos" },
+            "vous": { "fr": "mettez", "es": "pone" },
+            "ils": { "fr": "mettent", "es": "ponen" },
+            "elles": { "fr": "mettent", "es": "ponen" }
+        }
+    },
+    {
+        "infinitive": "voir",
+        "es": "ver",
+        "conjugations": {
+            "je": { "fr": "vois", "es": "veo" },
+            "j'": null,
+            "tu": { "fr": "vois", "es": "ves" },
+            "il": { "fr": "voit", "es": "ve" },
+            "elle": { "fr": "voit", "es": "ve" },
+            "on": { "fr": "voit", "es": "ve" },
+            "nous": { "fr": "voyons", "es": "vemos" },
+            "vous": { "fr": "voyez", "es": "ve" },
+            "ils": { "fr": "voient", "es": "ven" },
+            "elles": { "fr": "voient", "es": "ven" }
+        }
+    },
+    {
+        "infinitive": "vouloir",
+        "es": "querer",
+        "conjugations": {
+            "je": { "fr": "veux", "es": "quiero" },
+            "j'": null,
+            "tu": { "fr": "veux", "es": "quieres" },
+            "il": { "fr": "veut", "es": "quiere" },
+            "elle": { "fr": "veut", "es": "quiere" },
+            "on": { "fr": "veut", "es": "quiere" },
+            "nous": { "fr": "voulons", "es": "queremos" },
+            "vous": { "fr": "voulez", "es": "quiere" },
+            "ils": { "fr": "veulent", "es": "quieren" },
+            "elles": { "fr": "veulent", "es": "quieren" }
+        }
+    },
+    {
+        "infinitive": "pouvoir",
+        "es": "poder",
+        "conjugations": {
+            "je": { "fr": "peux", "es": "puedo" },
+            "j'": null,
+            "tu": { "fr": "peux", "es": "puedes" },
+            "il": { "fr": "peut", "es": "puede" },
+            "elle": { "fr": "peut", "es": "puede" },
+            "on": { "fr": "peut", "es": "puede" },
+            "nous": { "fr": "pouvons", "es": "podemos" },
+            "vous": { "fr": "pouvez", "es": "puede" },
+            "ils": { "fr": "peuvent", "es": "pueden" },
+            "elles": { "fr": "peuvent", "es": "pueden" }
+        }
+    },
+    {
+        "infinitive": "devoir",
+        "es": "deber",
+        "conjugations": {
+            "je": { "fr": "dois", "es": "debo" },
+            "j'": null,
+            "tu": { "fr": "dois", "es": "debes" },
+            "il": { "fr": "doit", "es": "debe" },
+            "elle": { "fr": "doit", "es": "debe" },
+            "on": { "fr": "doit", "es": "debe" },
+            "nous": { "fr": "devons", "es": "debemos" },
+            "vous": { "fr": "devez", "es": "debe" },
+            "ils": { "fr": "doivent", "es": "deben" },
+            "elles": { "fr": "doivent", "es": "deben" }
+        }
+    },
+    {
+        "infinitive": "savoir",
+        "es": "saber",
+        "conjugations": {
+            "je": { "fr": "sais", "es": "sé" },
+            "j'": null,
+            "tu": { "fr": "sais", "es": "sabes" },
+            "il": { "fr": "sait", "es": "sabe" },
+            "elle": { "fr": "sait", "es": "sabe" },
+            "on": { "fr": "sait", "es": "sabe" },
+            "nous": { "fr": "savons", "es": "sabemos" },
+            "vous": { "fr": "savez", "es": "sabe" },
+            "ils": { "fr": "savent", "es": "saben" },
+            "elles": { "fr": "savent", "es": "saben" }
+        }
+    },
+    {
+        "infinitive": "connaître",
+        "es": "conocer",
+        "conjugations": {
+            "je": { "fr": "connais", "es": "conozco" },
+            "j'": null,
+            "tu": { "fr": "connais", "es": "conoces" },
+            "il": { "fr": "connaît", "es": "conoce" },
+            "elle": { "fr": "connaît", "es": "conoce" },
+            "on": { "fr": "connaît", "es": "conoce" },
+            "nous": { "fr": "connaissons", "es": "conocemos" },
+            "vous": { "fr": "connaissez", "es": "conoce" },
+            "ils": { "fr": "connaissent", "es": "conocen" },
+            "elles": { "fr": "connaissent", "es": "conocen" }
+        }
+    },
+    {
+        "infinitive": "venir",
+        "es": "venir",
+        "conjugations": {
+            "je": { "fr": "viens", "es": "vengo" },
+            "j'": null,
+            "tu": { "fr": "viens", "es": "vienes" },
+            "il": { "fr": "vient", "es": "viene" },
+            "elle": { "fr": "vient", "es": "viene" },
+            "on": { "fr": "vient", "es": "viene" },
+            "nous": { "fr": "venons", "es": "venimos" },
+            "vous": { "fr": "venez", "es": "viene" },
+            "ils": { "fr": "viennent", "es": "vienen" },
+            "elles": { "fr": "viennent", "es": "vienen" }
+        }
+    },
+    {
+        "infinitive": "tenir",
+        "es": "tener",
+        "conjugations": {
+            "je": { "fr": "tiens", "es": "tengo" },
+            "j'": null,
+            "tu": { "fr": "tiens", "es": "tienes" },
+            "il": { "fr": "tient", "es": "tiene" },
+            "elle": { "fr": "tient", "es": "tiene" },
+            "on": { "fr": "tient", "es": "tiene" },
+            "nous": { "fr": "tenons", "es": "tenemos" },
+            "vous": { "fr": "tenez", "es": "tiene" },
+            "ils": { "fr": "tiennent", "es": "tienen" },
+            "elles": { "fr": "tiennent", "es": "tienen" }
+        }
+    },
+    {
+        "infinitive": "dire",
+        "es": "decir",
+        "conjugations": {
+            "je": { "fr": "dis", "es": "digo" },
+            "j'": null,
+            "tu": { "fr": "dis", "es": "dices" },
+            "il": { "fr": "dit", "es": "dice" },
+            "elle": { "fr": "dit", "es": "dice" },
+            "on": { "fr": "dit", "es": "dice" },
+            "nous": { "fr": "disons", "es": "decimos" },
+            "vous": { "fr": "dites", "es": "dice" },
+            "ils": { "fr": "disent", "es": "dicen" },
+            "elles": { "fr": "disent", "es": "dicen" }
+        }
+    },
+    {
+        "infinitive": "faire",
+        "es": "hacer",
+        "conjugations": {
+            "je": { "fr": "fais", "es": "hago" },
+            "j'": null,
+            "tu": { "fr": "fais", "es": "haces" },
+            "il": { "fr": "fait", "es": "hace" },
+            "elle": { "fr": "fait", "es": "hace" },
+            "on": { "fr": "fait", "es": "hace" },
+            "nous": { "fr": "faisons", "es": "hacemos" },
+            "vous": { "fr": "faites", "es": "hace" },
+            "ils": { "fr": "font", "es": "hacen" },
+            "elles": { "fr": "font", "es": "hacen" }
+        }
+    },
+    {
+        "infinitive": "aller",
+        "es": "ir",
+        "conjugations": {
+            "je": { "fr": "vais", "es": "voy" },
+            "j'": null,
+            "tu": { "fr": "vas", "es": "vas" },
+            "il": { "fr": "va", "es": "va" },
+            "elle": { "fr": "va", "es": "va" },
+            "on": { "fr": "va", "es": "va" },
+            "nous": { "fr": "allons", "es": "vamos" },
+            "vous": { "fr": "allez", "es": "va" },
+            "ils": { "fr": "vont", "es": "van" },
+            "elles": { "fr": "vont", "es": "van" }
+        }
+    },
+    {
+        "infinitive": "être",
+        "es": "ser",
+        "conjugations": {
+            "je": { "fr": "suis", "es": "soy" },
+            "j'": null,
+            "tu": { "fr": "es", "es": "eres" },
+            "il": { "fr": "est", "es": "es" },
+            "elle": { "fr": "est", "es": "es" },
+            "on": { "fr": "est", "es": "es" },
+            "nous": { "fr": "sommes", "es": "somos" },
+            "vous": { "fr": "êtes", "es": "es" },
+            "ils": { "fr": "sont", "es": "son" },
+            "elles": { "fr": "sont", "es": "son" }
+        }
+    },
+    {
+        "infinitive": "avoir",
+        "es": "tener",
+        "conjugations": {
+            "je": null,
+            "j'": { "fr": "ai", "es": "tengo" },
+            "tu": { "fr": "as", "es": "tienes" },
+            "il": { "fr": "a", "es": "tiene" },
+            "elle": { "fr": "a", "es": "tiene" },
+            "on": { "fr": "a", "es": "tiene" },
+            "nous": { "fr": "avons", "es": "tenemos" },
+            "vous": { "fr": "avez", "es": "tiene" },
+            "ils": { "fr": "ont", "es": "tienen" },
+            "elles": { "fr": "ont", "es": "tienen" }
+        }
+    },
+    {
+        "infinitive": "courir",
+        "es": "correr",
+        "conjugations": {
+            "je": { "fr": "cours", "es": "corro" },
+            "j'": null,
+            "tu": { "fr": "cours", "es": "corres" },
+            "il": { "fr": "court", "es": "corre" },
+            "elle": { "fr": "court", "es": "corre" },
+            "on": { "fr": "court", "es": "corre" },
+            "nous": { "fr": "courons", "es": "corremos" },
+            "vous": { "fr": "courez", "es": "corre" },
+            "ils": { "fr": "courent", "es": "corren" },
+            "elles": { "fr": "courent", "es": "corren" }
+        }
+    },
+    {
+        "infinitive": "marcher",
+        "es": "caminar",
+        "conjugations": {
+            "je": { "fr": "marche", "es": "camino" },
+            "j'": null,
+            "tu": { "fr": "marches", "es": "caminas" },
+            "il": { "fr": "marche", "es": "camina" },
+            "elle": { "fr": "marche", "es": "camina" },
+            "on": { "fr": "marche", "es": "camina" },
+            "nous": { "fr": "marchons", "es": "caminamos" },
+            "vous": { "fr": "marchez", "es": "camina" },
+            "ils": { "fr": "marchent", "es": "caminan" },
+            "elles": { "fr": "marchent", "es": "caminan" }
+        }
+    },
+    {
+        "infinitive": "étudier",
+        "es": "estudiar",
+        "conjugations": {
+            "je": null,
+            "j'": { "fr": "étudie", "es": "estudio" },
+            "tu": { "fr": "étudies", "es": "estudias" },
+            "il": { "fr": "étudie", "es": "estudia" },
+            "elle": { "fr": "étudie", "es": "estudia" },
+            "on": { "fr": "étudie", "es": "estudia" },
+            "nous": { "fr": "étudions", "es": "estudiamos" },
+            "vous": { "fr": "étudiez", "es": "estudia" },
+            "ils": { "fr": "étudient", "es": "estudian" },
+            "elles": { "fr": "étudient", "es": "estudian" }
+        }
+    },
+    {
+        "infinitive": "jouer",
+        "es": "jugar",
+        "conjugations": {
+            "je": { "fr": "joue", "es": "juego" },
+            "j'": null,
+            "tu": { "fr": "joues", "es": "juegas" },
+            "il": { "fr": "joue", "es": "juega" },
+            "elle": { "fr": "joue", "es": "juega" },
+            "on": { "fr": "joue", "es": "juega" },
+            "nous": { "fr": "jouons", "es": "jugamos" },
+            "vous": { "fr": "jouez", "es": "juega" },
+            "ils": { "fr": "jouent", "es": "juegan" },
+            "elles": { "fr": "jouent", "es": "juegan" }
+        }
+    },
+    {
+        "infinitive": "travailler",
+        "es": "trabajar",
+        "conjugations": {
+            "je": { "fr": "travaille", "es": "trabajo" },
+            "j'": null,
+            "tu": { "fr": "travailles", "es": "trabajas" },
+            "il": { "fr": "travaille", "es": "trabaja" },
+            "elle": { "fr": "travaille", "es": "trabaja" },
+            "on": { "fr": "travaille", "es": "trabaja" },
+            "nous": { "fr": "travaillons", "es": "trabajamos" },
+            "vous": { "fr": "travaillez", "es": "trabaja" },
+            "ils": { "fr": "travaillent", "es": "trabajan" },
+            "elles": { "fr": "travaillent", "es": "trabajan" }
+        }
+    },
+    {
+        "infinitive": "donner",
+        "es": "dar",
+        "conjugations": {
+            "je": { "fr": "donne", "es": "doy" },
+            "j'": null,
+            "tu": { "fr": "donnes", "es": "das" },
+            "il": { "fr": "donne", "es": "da" },
+            "elle": { "fr": "donne", "es": "da" },
+            "on": { "fr": "donne", "es": "da" },
+            "nous": { "fr": "donnons", "es": "damos" },
+            "vous": { "fr": "donnez", "es": "da" },
+            "ils": { "fr": "donnent", "es": "dan" },
+            "elles": { "fr": "donnent", "es": "dan" }
+        }
+    },
+    {
+        "infinitive": "ouvrir",
+        "es": "abrir",
+        "conjugations": {
+            "je": null,
+            "j'": { "fr": "ouvre", "es": "abro" },
+            "tu": { "fr": "ouvres", "es": "abres" },
+            "il": { "fr": "ouvre", "es": "abre" },
+            "elle": { "fr": "ouvre", "es": "abre" },
+            "on": { "fr": "ouvre", "es": "abre" },
+            "nous": { "fr": "ouvrons", "es": "abrimos" },
+            "vous": { "fr": "ouvrez", "es": "abre" },
+            "ils": { "fr": "ouvrent", "es": "abren" },
+            "elles": { "fr": "ouvrent", "es": "abren" }
+        }
+    },
+    {
+        "infinitive": "offrir",
+        "es": "ofrecer",
+        "conjugations": {
+            "je": null,
+            "j'": { "fr": "offre", "es": "ofrezco" },
+            "tu": { "fr": "offres", "es": "ofreces" },
+            "il": { "fr": "offre", "es": "ofrece" },
+            "elle": { "fr": "offre", "es": "ofrece" },
+            "on": { "fr": "offre", "es": "ofrece" },
+            "nous": { "fr": "offrons", "es": "ofrecemos" },
+            "vous": { "fr": "offrez", "es": "ofrece" },
+            "ils": { "fr": "offrent", "es": "ofrecen" },
+            "elles": { "fr": "offrent", "es": "ofrecen" }
+        }
+    },
+    {
+        "infinitive": "recevoir",
+        "es": "recibir",
+        "conjugations": {
+            "je": { "fr": "reçois", "es": "recibo" },
+            "j'": null,
+            "tu": { "fr": "reçois", "es": "recibes" },
+            "il": { "fr": "reçoit", "es": "recibe" },
+            "elle": { "fr": "reçoit", "es": "recibe" },
+            "on": { "fr": "reçoit", "es": "recibe" },
+            "nous": { "fr": "recevons", "es": "recibimos" },
+            "vous": { "fr": "recevez", "es": "recibe" },
+            "ils": { "fr": "reçoivent", "es": "reciben" },
+            "elles": { "fr": "reçoivent", "es": "reciben" }
+        }
+    },
+    {
+        "infinitive": "boire",
+        "es": "beber",
+        "conjugations": {
+            "je": { "fr": "bois", "es": "bebo" },
+            "j'": null,
+            "tu": { "fr": "bois", "es": "bebes" },
+            "il": { "fr": "boit", "es": "bebe" },
+            "elle": { "fr": "boit", "es": "bebe" },
+            "on": { "fr": "boit", "es": "bebe" },
+            "nous": { "fr": "buvons", "es": "bebemos" },
+            "vous": { "fr": "buvez", "es": "bebe" },
+            "ils": { "fr": "boivent", "es": "beben" },
+            "elles": { "fr": "boivent", "es": "beben" }
+        }
+    },
+    {
+        "infinitive": "croire",
+        "es": "creer",
+        "conjugations": {
+            "je": { "fr": "crois", "es": "creo" },
+            "j'": null,
+            "tu": { "fr": "crois", "es": "crees" },
+            "il": { "fr": "croit", "es": "cree" },
+            "elle": { "fr": "croit", "es": "cree" },
+            "on": { "fr": "croit", "es": "cree" },
+            "nous": { "fr": "croyons", "es": "creemos" },
+            "vous": { "fr": "croyez", "es": "cree" },
+            "ils": { "fr": "croient", "es": "creen" },
+            "elles": { "fr": "croient", "es": "creen" }
+        }
+    },
+    {
+        "infinitive": "suivre",
+        "es": "seguir",
+        "conjugations": {
+            "je": { "fr": "suis", "es": "sigo" },
+            "j'": null,
+            "tu": { "fr": "suis", "es": "sigues" },
+            "il": { "fr": "suit", "es": "sigue" },
+            "elle": { "fr": "suit", "es": "sigue" },
+            "on": { "fr": "suit", "es": "sigue" },
+            "nous": { "fr": "suivons", "es": "seguimos" },
+            "vous": { "fr": "suivez", "es": "sigue" },
+            "ils": { "fr": "suivent", "es": "siguen" },
+            "elles": { "fr": "suivent", "es": "siguen" }
+        }
+    },
+    {
+        "infinitive": "vivre",
+        "es": "vivir",
+        "conjugations": {
+            "je": { "fr": "vis", "es": "vivo" },
+            "j'": null,
+            "tu": { "fr": "vis", "es": "vives" },
+            "il": { "fr": "vit", "es": "vive" },
+            "elle": { "fr": "vit", "es": "vive" },
+            "on": { "fr": "vit", "es": "vive" },
+            "nous": { "fr": "vivons", "es": "vivimos" },
+            "vous": { "fr": "vivez", "es": "vive" },
+            "ils": { "fr": "vivent", "es": "viven" },
+            "elles": { "fr": "vivent", "es": "viven" }
+        }
+    },
+    {
+        "infinitive": "conduire",
+        "es": "conducir",
+        "conjugations": {
+            "je": { "fr": "conduis", "es": "conduzco" },
+            "j'": null,
+            "tu": { "fr": "conduis", "es": "conduces" },
+            "il": { "fr": "conduit", "es": "conduce" },
+            "elle": { "fr": "conduit", "es": "conduce" },
+            "on": { "fr": "conduit", "es": "conduce" },
+            "nous": { "fr": "conduisons", "es": "conducimos" },
+            "vous": { "fr": "conduisez", "es": "conduce" },
+            "ils": { "fr": "conduisent", "es": "conducen" },
+            "elles": { "fr": "conduisent", "es": "conducen" }
+        }
+    },
+    {
+        "infinitive": "envoyer",
+        "es": "enviar",
+        "conjugations": {
+            "je": null,
+            "j'": { "fr": "envoie", "es": "envío" },
+            "tu": { "fr": "envoies", "es": "envías" },
+            "il": { "fr": "envoie", "es": "envía" },
+            "elle": { "fr": "envoie", "es": "envía" },
+            "on": { "fr": "envoie", "es": "envía" },
+            "nous": { "fr": "envoyons", "es": "enviamos" },
+            "vous": { "fr": "envoyez", "es": "envía" },
+            "ils": { "fr": "envoient", "es": "envían" },
+            "elles": { "fr": "envoient", "es": "envían" }
+        }
+    },
+    {
+        "infinitive": "nager",
+        "es": "nadar",
+        "conjugations": {
+            "je": { "fr": "nage", "es": "nado" },
+            "j'": null,
+            "tu": { "fr": "nages", "es": "nadas" },
+            "il": { "fr": "nage", "es": "nada" },
+            "elle": { "fr": "nage", "es": "nada" },
+            "on": { "fr": "nage", "es": "nada" },
+            "nous": { "fr": "nageons", "es": "nadamos" },
+            "vous": { "fr": "nagez", "es": "nada" },
+            "ils": { "fr": "nagent", "es": "nadan" },
+            "elles": { "fr": "nagent", "es": "nadan" }
+        }
+    },
+    {
+        "infinitive": "voyager",
+        "es": "viajar",
+        "conjugations": {
+            "je": { "fr": "voyage", "es": "viajo" },
+            "j'": null,
+            "tu": { "fr": "voyages", "es": "viajas" },
+            "il": { "fr": "voyage", "es": "viaja" },
+            "elle": { "fr": "voyage", "es": "viaja" },
+            "on": { "fr": "voyage", "es": "viaja" },
+            "nous": { "fr": "voyageons", "es": "viajamos" },
+            "vous": { "fr": "voyagez", "es": "viaja" },
+            "ils": { "fr": "voyagent", "es": "viajan" },
+            "elles": { "fr": "voyagent", "es": "viajan" }
+        }
+    },
+    {
+        "infinitive": "commencer",
+        "es": "comenzar",
+        "conjugations": {
+            "je": { "fr": "commence", "es": "comienzo" },
+            "j'": null,
+            "tu": { "fr": "commences", "es": "comienzas" },
+            "il": { "fr": "commence", "es": "comienza" },
+            "elle": { "fr": "commence", "es": "comienza" },
+            "on": { "fr": "commence", "es": "comienza" },
+            "nous": { "fr": "commençons", "es": "comenzamos" },
+            "vous": { "fr": "commencez", "es": "comienza" },
+            "ils": { "fr": "commencent", "es": "comienzan" },
+            "elles": { "fr": "commencent", "es": "comienzan" }
+        }
+    },
+    {
+        "infinitive": "se promener",
+        "es": "pasearse",
+        "conjugations": {
+            "je": { "fr": "me promène", "es": "me paseo" },
+            "j'": null,
+            "tu": { "fr": "te promènes", "es": "te paseas" },
+            "il": { "fr": "se promène", "es": "se pasea" },
+            "elle": { "fr": "se promène", "es": "se pasea" },
+            "on": { "fr": "se promène", "es": "se pasea" },
+            "nous": { "fr": "nous promenons", "es": "nos paseamos" },
+            "vous": { "fr": "vous promenez", "es": "se pasea" },
+            "ils": { "fr": "se promènent", "es": "se pasean" },
+            "elles": { "fr": "se promènent", "es": "se pasean" }
+        }
+    },
+    {
+        "infinitive": "appeler",
+        "es": "llamar",
+        "conjugations": {
+            "je": null,
+            "j'": { "fr": "appelle", "es": "llamo" },
+            "tu": { "fr": "appelles", "es": "llamas" },
+            "il": { "fr": "appelle", "es": "llama" },
+            "elle": { "fr": "appelle", "es": "llama" },
+            "on": { "fr": "appelle", "es": "llama" },
+            "nous": { "fr": "appelons", "es": "llamamos" },
+            "vous": { "fr": "appelez", "es": "llama" },
+            "ils": { "fr": "appellent", "es": "llaman" },
+            "elles": { "fr": "appellent", "es": "llaman" }
+        }
+    },
+    {
+        "infinitive": "jeter",
+        "es": "lanzar",
+        "conjugations": {
+            "je": { "fr": "jette", "es": "lanzo" },
+            "j'": null,
+            "tu": { "fr": "jettes", "es": "lanzas" },
+            "il": { "fr": "jette", "es": "lanza" },
+            "elle": { "fr": "jette", "es": "lanza" },
+            "on": { "fr": "jette", "es": "lanza" },
+            "nous": { "fr": "jetons", "es": "lanzamos" },
+            "vous": { "fr": "jetez", "es": "lanza" },
+            "ils": { "fr": "jettent", "es": "lanzan" },
+            "elles": { "fr": "jettent", "es": "lanzan" }
+        }
+    },
+    {
+        "infinitive": "préférer",
+        "es": "preferir",
+        "conjugations": {
+            "je": { "fr": "préfère", "es": "prefiero" },
+            "j'": null,
+            "tu": { "fr": "préfères", "es": "prefieres" },
+            "il": { "fr": "préfère", "es": "prefiere" },
+            "elle": { "fr": "préfère", "es": "prefiere" },
+            "on": { "fr": "préfère", "es": "prefiere" },
+            "nous": { "fr": "préférons", "es": "preferimos" },
+            "vous": { "fr": "préférez", "es": "prefiere" },
+            "ils": { "fr": "préfèrent", "es": "prefieren" },
+            "elles": { "fr": "préfèrent", "es": "prefieren" }
+        }
+    },
+    {
+        "infinitive": "espérer",
+        "es": "esperar",
+        "conjugations": {
+            "je": null,
+            "j'": { "fr": "espère", "es": "espero" },
+            "tu": { "fr": "espères", "es": "esperas" },
+            "il": { "fr": "espère", "es": "espera" },
+            "elle": { "fr": "espère", "es": "espera" },
+            "on": { "fr": "espère", "es": "espera" },
+            "nous": { "fr": "espérons", "es": "esperamos" },
+            "vous": { "fr": "espérez", "es": "espera" },
+            "ils": { "fr": "espèrent", "es": "esperan" },
+            "elles": { "fr": "espèrent", "es": "esperan" }
+        }
+    },
+    {
+        "infinitive": "pleuvoir",
+        "es": "llover",
+        "conjugations": {
+            "je": null,
+            "j'": null,
+            "tu": null,
+            "il": { "fr": "pleut", "es": "llueve" },
+            "elle": null,
+            "on": null,
+            "nous": null,
+            "vous": null,
+            "ils": null,
+            "elles": null
+        }
+    },
+    {
+        "infinitive": "falloir",
+        "es": "hacer falta",
+        "conjugations": {
+            "je": null,
+            "j'": null,
+            "tu": null,
+            "il": { "fr": "faut", "es": "hace falta" },
+            "elle": null,
+            "on": null,
+            "nous": null,
+            "vous": null,
+            "ils": null,
+            "elles": null
+        }
+    }
+]

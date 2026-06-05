@@ -1,0 +1,192 @@
+[
+    {
+        "fr": "un film",
+        "es": "una película",
+        "acceptedVerbs": ["regarder", "voir", "préférer"]
+    },
+    {
+        "fr": "un livre",
+        "es": "un libro",
+        "acceptedVerbs": ["lire", "étudier", "apprendre", "préférer"]
+    },
+    {
+        "fr": "dans le parc",
+        "es": "en el parque",
+        "acceptedVerbs": ["marcher", "courir", "se promener", "jouer", "travailler"]
+    },
+    {
+        "fr": "un gâteau",
+        "es": "un pastel",
+        "acceptedVerbs": ["manger", "faire", "préparer", "acheter", "offrir", "préférer"]
+    },
+    {
+        "fr": "la télévision",
+        "es": "la televisión",
+        "acceptedVerbs": ["regarder", "allumer", "éteindre"]
+    },
+    {
+        "fr": "le français",
+        "es": "el francés",
+        "acceptedVerbs": ["parler", "apprendre", "étudier", "enseigner", "savoir", "comprendre", "aimer"]
+    },
+    {
+        "fr": "un verre d'eau",
+        "es": "un vaso de agua",
+        "acceptedVerbs": ["boire", "prendre", "vouloir", "avoir"]
+    },
+    {
+        "fr": "à la maison",
+        "es": "en casa",
+        "acceptedVerbs": ["rester", "travailler", "dormir", "être", "manger", "jouer"]
+    },
+    {
+        "fr": "au cinéma",
+        "es": "al cine",
+        "acceptedVerbs": ["aller", "venir", "partir", "courir", "marcher", "sortir"]
+    },
+    {
+        "fr": "en France",
+        "es": "a Francia",
+        "acceptedVerbs": ["voyager", "aller", "partir", "vivre", "travailler", "étudier"]
+    },
+    {
+        "fr": "un problème",
+        "es": "un problema",
+        "acceptedVerbs": ["avoir", "comprendre", "expliquer", "résoudre", "étudier"]
+    },
+    {
+        "fr": "la vérité",
+        "es": "la verdad",
+        "acceptedVerbs": ["dire", "savoir", "connaître", "chercher"]
+    },
+    {
+        "fr": "un cadeau",
+        "es": "un regalo",
+        "acceptedVerbs": ["offrir", "recevoir", "acheter", "donner", "vouloir", "préférer"]
+    },
+    {
+        "fr": "la fenêtre",
+        "es": "la ventana",
+        "acceptedVerbs": ["ouvrir", "fermer", "regarder"]
+    },
+    {
+        "fr": "la porte",
+        "es": "la puerta",
+        "acceptedVerbs": ["ouvrir", "fermer", "pousser", "tirer"]
+    },
+    {
+        "fr": "une lettre",
+        "es": "una carta",
+        "acceptedVerbs": ["écrire", "envoyer", "recevoir", "lire"]
+    },
+    {
+        "fr": "un ami",
+        "es": "un amigo",
+        "acceptedVerbs": ["voir", "rencontrer", "aider", "appeler", "attendre", "inviter"]
+    },
+    {
+        "fr": "une question",
+        "es": "una pregunta",
+        "acceptedVerbs": ["poser", "avoir", "comprendre", "répondre"]
+    },
+    {
+        "fr": "un secret",
+        "es": "un secreto",
+        "acceptedVerbs": ["dire", "savoir", "garder", "connaître", "entendre"]
+    },
+    {
+        "fr": "une chanson",
+        "es": "una canción",
+        "acceptedVerbs": ["chanter", "écouter", "apprendre", "aimer", "entendre", "préférer"]
+    },
+    {
+        "fr": "la voiture",
+        "es": "el coche",
+        "acceptedVerbs": ["conduire", "laver", "vendre", "acheter", "regarder"]
+    },
+    {
+        "fr": "le dîner",
+        "es": "la cena",
+        "acceptedVerbs": ["préparer", "cuisiner", "manger", "servir", "faire", "préférer"]
+    },
+    {
+        "fr": "un billet",
+        "es": "un billete",
+        "acceptedVerbs": ["acheter", "vendre", "avoir", "vouloir", "recevoir"]
+    },
+    {
+        "fr": "le journal",
+        "es": "el periódico",
+        "acceptedVerbs": ["lire", "acheter", "recevoir", "ouvrir"]
+    },
+    {
+        "fr": "de la musique",
+        "es": "música",
+        "acceptedVerbs": ["écouter", "jouer", "entendre", "aimer", "faire", "préférer"]
+    },
+    {
+        "fr": "son chien",
+        "es": "su perro",
+        "acceptedVerbs": ["promener", "nourrir", "aimer", "regarder", "appeler"]
+    },
+    {
+        "fr": "un sport",
+        "es": "un deporte",
+        "acceptedVerbs": ["faire", "pratiquer", "jouer", "aimer", "commencer", "préférer"]
+    },
+    {
+        "fr": "un appartement",
+        "es": "un apartamento",
+        "acceptedVerbs": ["acheter", "vendre", "louer", "avoir", "chercher", "trouver"]
+    },
+    {
+        "fr": "un voyage",
+        "es": "un viaje",
+        "acceptedVerbs": ["faire", "préparer", "planifier", "vouloir", "aimer", "commencer", "préférer"]
+    },
+    {
+        "fr": "un courriel",
+        "es": "un correo electrónico",
+        "acceptedVerbs": ["écrire", "envoyer", "recevoir", "lire"]
+    },
+    {
+        "fr": "la table",
+        "es": "la mesa",
+        "acceptedVerbs": ["mettre", "préparer", "débarrasser", "ouvrir", "fermer"]
+    },
+    {
+        "fr": "une langue étrangère",
+        "es": "un idioma extranjero",
+        "acceptedVerbs": ["apprendre", "étudier", "parler", "savoir", "comprendre", "enseigner"]
+    },
+    {
+        "fr": "le bus",
+        "es": "el autobús",
+        "acceptedVerbs": ["prendre", "attendre", "voir", "perdre"]
+    },
+    {
+        "fr": "un roman",
+        "es": "una novela",
+        "acceptedVerbs": ["lire", "écrire", "publier", "aimer", "commencer", "finir", "préférer"]
+    },
+    {
+        "fr": "un enfant",
+        "es": "un niño",
+        "acceptedVerbs": ["aider", "appeler", "voir", "entendre", "attendre", "aimer"]
+    },
+    {
+        "fr": "un peu",
+        "es": "un poco",
+        "acceptedVerbs": ["manger", "boire", "dormir", "travailler", "étudier", "parler"]
+    },
+    {
+        "fr": "vite",
+        "es": "rápido",
+        "acceptedVerbs": ["courir", "marcher", "conduire", "travailler", "parler", "finir"]
+    },
+    {
+        "fr": "bien",
+        "es": "bien",
+        "acceptedVerbs": ["travailler", "étudier", "chanter", "jouer", "parler", "dormir", "manger", "faire"]
+    }
+]
