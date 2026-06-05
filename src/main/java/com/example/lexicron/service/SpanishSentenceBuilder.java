@@ -32,6 +32,9 @@ public class SpanishSentenceBuilder {
 
     private String getVerbConjugationEs(Round round) {
         String subjectKey = resolveSubjectKey(round);
+        if ("on".equals(subjectKey)) {
+            subjectKey = "nous";
+        }
         Conjugation conj = round.verb().conjugations().get(subjectKey);
         if (conj == null) {
             throw new IllegalStateException(

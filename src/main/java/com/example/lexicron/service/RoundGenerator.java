@@ -3,13 +3,16 @@ package com.example.lexicron.service;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
+import java.util.Map;
 import java.util.Random;
 import java.util.stream.Collectors;
-import com.example.lexicron.model.Subject;
-import com.example.lexicron.model.Verb;
 import com.example.lexicron.model.Complement;
+import com.example.lexicron.model.Conjugation;
 import com.example.lexicron.model.Round;
 import com.example.lexicron.model.RoundOptions;
+import com.example.lexicron.model.Subject;
+import com.example.lexicron.model.Verb;
+import com.example.lexicron.model.VerbOption;
 import com.example.lexicron.exception.LexicronException;
 
 /**
@@ -45,11 +48,22 @@ public class RoundGenerator {
      * @throws LexicronException si ning&uacute;n verbo tiene complementos compatibles
      */
     public Round generateRound() {
-        Subject subject = pickRandom(subjects);
         Verb verb = pickVerbWithComplement();
+        Subject subject = pickSubjectFor(verb);
         Complement complement = pickComplementFor(verb);
 
         return new Round(subject, verb, complement);
+    }
+
+    private Subject pickSubjectFor(Verb verb) {
+        List<Subject> compatible = subjects.stream()
+            .filter(s -> hasConjugationFor(s, verb))
+            .collect(Collectors.toList());
+        return pickRandom(compatible);
+    }
+
+    private boolean hasConjugationFor(Subject subject, Verb verb) {
+        return verb.conjugations().get(subject.fr()) != null;
     }
 
     /**
@@ -61,8 +75,8 @@ public class RoundGenerator {
      * @return objeto con las listas de opciones mezcladas por categoría
      */
     public RoundOptions generateOptions(Round correctRound) {
-        List<Subject> subjectOptions = buildOptions(subjects, correctRound.subject());
-        List<Verb> verbOptions = buildOptions(verbs, correctRound.verb());
+        List<Subject> subjectOptions = buildSubjectOptions(correctRound);
+        List<VerbOption> verbOptions = buildVerbOptions(correctRound);
         List<Complement> complementOptions = buildOptions(complements, correctRound.complement());
 
         return new RoundOptions(correctRound, subjectOptions, verbOptions, complementOptions);
@@ -80,6 +94,63 @@ public class RoundGenerator {
         Collections.shuffle(options, random);
 
         return options;
+    }
+
+    private List<Subject> buildSubjectOptions(Round correctRound) {
+        Subject correct = correctRound.subject();
+        List<Subject> distractors = subjects.stream()
+            .filter(s -> !s.equals(correct))
+            .filter(s -> !sonEquivalentes(s, correct))
+            .collect(Collectors.toCollection(ArrayList::new));
+        Collections.shuffle(distractors, random);
+
+        List<Subject> options = new ArrayList<>();
+        options.add(correct);
+        options.addAll(distractors.stream().limit(3).toList());
+        Collections.shuffle(options, random);
+
+        return options;
+    }
+
+    private static boolean sonEquivalentes(Subject a, Subject b) {
+        String af = a.fr();
+        String bf = b.fr();
+        return ("on".equals(af) && "nous".equals(bf))
+            || ("nous".equals(af) && "on".equals(bf));
+    }
+
+    private List<VerbOption> buildVerbOptions(Round correctRound) {
+        List<Verb> distractors = verbs.stream()
+            .filter(v -> !v.equals(correctRound.verb()))
+            .filter(v -> v.conjugations().values().stream().anyMatch(c -> c != null))
+            .collect(Collectors.toCollection(ArrayList::new));
+        Collections.shuffle(distractors, random);
+
+        List<VerbOption> options = new ArrayList<>();
+        options.add(new VerbOption(correctRound.verb(), correctRound.subject()));
+
+        for (Verb distractor : distractors.stream().limit(3).toList()) {
+            Subject randomSubject = pickRandomSubjectFor(distractor, correctRound.subject());
+            options.add(new VerbOption(distractor, randomSubject));
+        }
+
+        Collections.shuffle(options, random);
+        return options;
+    }
+
+    private Subject pickRandomSubjectFor(Verb verb, Subject excludeSubject) {
+        List<Subject> valid = subjects.stream()
+            .filter(s -> !s.equals(excludeSubject))
+            .filter(s -> hasConjugationFor(s, verb))
+            .collect(Collectors.toList());
+
+        if (valid.isEmpty()) {
+            valid = subjects.stream()
+                .filter(s -> hasConjugationFor(s, verb))
+                .collect(Collectors.toList());
+        }
+
+        return pickRandom(valid);
     }
 
     /**

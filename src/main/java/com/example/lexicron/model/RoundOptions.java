@@ -9,12 +9,13 @@ import java.util.List;
  *
  * @param correctRound       la combinación correcta de la ronda
  * @param subjectOptions     lista de 4 sujetos (uno correcto + 3 distractores)
- * @param verbOptions        lista de 4 verbos (uno correcto + 3 distractores)
+ * @param verbOptions        lista de 4 opciones de verbo (uno correcto + 3 distractores),
+ *                           cada una con el verbo y el sujeto con el que se conjuga
  * @param complementOptions  lista de 4 complementos (uno correcto + 3 distractores)
  */
 public record RoundOptions(
     Round correctRound,
     List<Subject> subjectOptions,
-    List<Verb> verbOptions,
+    List<VerbOption> verbOptions,
     List<Complement> complementOptions
 ) {}

@@ -17,6 +17,7 @@ import com.example.lexicron.model.Round;
 import com.example.lexicron.model.RoundOptions;
 import com.example.lexicron.model.Subject;
 import com.example.lexicron.model.Verb;
+import com.example.lexicron.model.VerbOption;
 
 class RoundGeneratorTest {
 
@@ -140,7 +141,7 @@ class RoundGeneratorTest {
         RoundOptions options = generator.generateOptions(round);
 
         assertTrue(options.subjectOptions().contains(round.subject()));
-        assertTrue(options.verbOptions().contains(round.verb()));
+        assertTrue(options.verbOptions().stream().anyMatch(vo -> vo.verb().equals(round.verb())));
         assertTrue(options.complementOptions().contains(round.complement()));
     }
 
@@ -169,8 +170,8 @@ class RoundGeneratorTest {
         for (Subject s : options.subjectOptions()) {
             assertTrue(subjects.contains(s));
         }
-        for (Verb v : options.verbOptions()) {
-            assertTrue(verbs.contains(v));
+        for (VerbOption vo : options.verbOptions()) {
+            assertTrue(verbs.contains(vo.verb()));
         }
         for (Complement c : options.complementOptions()) {
             assertTrue(complements.contains(c));

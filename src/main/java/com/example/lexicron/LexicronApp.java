@@ -12,6 +12,7 @@ import java.util.List;
 import java.util.Scanner;
 
 import com.example.lexicron.model.Complement;
+import com.example.lexicron.model.Conjugation;
 import com.example.lexicron.model.GameResult;
 import com.example.lexicron.model.Round;
 import com.example.lexicron.model.RoundOptions;
@@ -19,6 +20,7 @@ import com.example.lexicron.model.RoundResult;
 import com.example.lexicron.model.Subject;
 import com.example.lexicron.model.ValidationResult;
 import com.example.lexicron.model.Verb;
+import com.example.lexicron.model.VerbOption;
 import com.example.lexicron.service.DataLoader;
 import com.example.lexicron.service.RoundGenerator;
 import com.example.lexicron.service.RoundValidator;
@@ -76,9 +78,13 @@ public class LexicronApp {
                 Subject chosenSubject = options.subjectOptions().get(subjectChoice - 1);
 
                 System.out.println("\nVerbos:");
-                printNumbered(options.verbOptions());
+                List<String> verbDisplay = options.verbOptions().stream()
+                    .map(LexicronApp::displayVerbOption)
+                    .toList();
+                printNumbered(verbDisplay);
                 int verbChoice = readChoice(scanner, 1, options.verbOptions().size());
-                Verb chosenVerb = options.verbOptions().get(verbChoice - 1);
+                VerbOption chosenVerbOption = options.verbOptions().get(verbChoice - 1);
+                Verb chosenVerb = chosenVerbOption.verb();
 
                 System.out.println("\nComplementos:");
                 printNumbered(options.complementOptions());
@@ -92,13 +98,13 @@ public class LexicronApp {
 
                 System.out.println("\n--- Resultado ronda " + roundNumber + " ---");
                 System.out.println("Sujeto: " + (result.subjectCorrect() ? "✓" : "✗") + " (correcto: " + round.subject().fr() + ")");
-                System.out.println("Verbo:  " + (result.verbCorrect() ? "✓" : "✗") + " (correcto: " + round.verb().infinitive() + ")");
+                System.out.println("Verbo:  " + (result.verbCorrect() ? "✓" : "✗") + " (correcto: " + getFrenchConjugation(round.verb(), round.subject()) + ")");
                 System.out.println("Comp.:  " + (result.complementCorrect() ? "✓" : "✗") + " (correcto: " + round.complement().fr() + ")");
                 System.out.println("Puntos: " + points);
 
                 if (!result.allCorrect()) {
                     String subjectKey = resolveFrenchSubjectKey(round);
-                    String verbFr = round.verb().conjugations().get(subjectKey).fr();
+                    String verbFr = getFrenchConjugation(round.verb(), round.subject());
                     String correctSentence = subjectKey + " " + verbFr + " " + round.complement().fr();
                     System.out.println("Frase correcta: " + correctSentence);
                 }
@@ -131,16 +137,44 @@ public class LexicronApp {
     }
 
     /**
+     * Obtiene la forma conjugada en francés de un verbo para un sujeto dado.
+     *
+     * @param verb    el verbo en infinitivo
+     * @param subject el sujeto para conjugar
+     * @return la forma conjugada en francés, o el infinitivo si no hay conjugación
+     */
+    private static String getFrenchConjugation(Verb verb, Subject subject) {
+        String key = resolveSubjectKey(subject, verb);
+        Conjugation conj = verb.conjugations().get(key);
+        return conj != null ? conj.fr() : verb.infinitive();
+    }
+
+    private static String resolveSubjectKey(Subject subject, Verb verb) {
+        String key = subject.fr();
+        if ("je".equals(key) && verb.conjugations().get("je") == null
+                && verb.conjugations().containsKey("j'")) {
+            return "j'";
+        }
+        return key;
+    }
+
+    /**
+     * Genera el texto a mostrar para una opción de verbo.
+     * Conjuga el verbo según el sujeto asociado y muestra la forma conjugada.
+     *
+     * @param vo la opción de verbo con su sujeto asociado
+     * @return el texto formateado (ej: "regarde (elle)")
+     */
+    private static String displayVerbOption(VerbOption vo) {
+        return getFrenchConjugation(vo.verb(), vo.conjugatedFor());
+    }
+
+    /**
      * Resuelve la clave de sujeto correcta para la frase en francés,
      * usando {@code j'} cuando el verbo no tiene conjugación para {@code je}.
      */
     private static String resolveFrenchSubjectKey(Round round) {
-        String key = round.subject().fr();
-        if ("je".equals(key) && round.verb().conjugations().get("je") == null
-                && round.verb().conjugations().containsKey("j'")) {
-            return "j'";
-        }
-        return key;
+        return resolveSubjectKey(round.subject(), round.verb());
     }
 
     /**
