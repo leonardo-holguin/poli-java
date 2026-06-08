@@ -28,7 +28,7 @@ import com.example.lexicron.service.ScoreCalculator;
 import com.example.lexicron.service.SpanishSentenceBuilder;
 
 /**
- * Punto de entrada del juego Lexicron en modo consola.
+ * Punto de entrada del juego Lexicron.
  * Presenta 5 rondas donde el usuario debe traducir frases del español al francés
  * seleccionando sujeto, verbo y complemento. Al final muestra el puntaje total
  * y lo guarda en un archivo.

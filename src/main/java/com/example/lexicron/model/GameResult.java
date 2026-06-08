@@ -3,7 +3,7 @@ package com.example.lexicron.model;
 import java.util.List;
 
 /**
- * Resultado completo de una partida de Lexicron.
+ * Resultado completo de una partida.
  * Contiene la lista de resultados de cada ronda y el puntaje total acumulado.
  *
  * @param rounds     lista de resultados de cada ronda jugada
