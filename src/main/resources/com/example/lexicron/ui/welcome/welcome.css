@@ -1,0 +1,196 @@
+/*
+ * Estilos de la pantalla de bienvenida de Lexicron.
+ * Tema oscuro con gradientes, tarjetas redondeadas y tipografía limpia.
+ */
+
+.welcome-root {
+    -fx-background-color: #14162b;
+    -fx-font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+}
+
+/* --- Cabecera --- */
+.header-section {
+    -fx-background-color: linear-gradient(to bottom, #0b1a3a, #14162b);
+    -fx-background-radius: 0 0 28 28;
+    -fx-padding: 0 20 10 20;
+}
+
+.title-label {
+    -fx-font-size: 44px;
+    -fx-font-weight: bold;
+    -fx-text-fill: linear-gradient(to right, #ff5f7e, #ffc93c);
+}
+
+.subtitle-label {
+    -fx-font-size: 14px;
+    -fx-text-fill: #9a9db5;
+}
+
+/* --- Contenido principal --- */
+.content-section {
+    -fx-background-color: #14162b;
+}
+
+/* --- Avatar --- */
+.avatar-container {
+    -fx-min-width: 84;
+    -fx-min-height: 84;
+    -fx-max-width: 84;
+    -fx-max-height: 84;
+}
+
+.avatar-circle {
+    -fx-min-width: 84;
+    -fx-min-height: 84;
+    -fx-max-width: 84;
+    -fx-max-height: 84;
+    -fx-background-color: #1f2137;
+    -fx-background-radius: 42;
+    -fx-border-color: #ff5f7e;
+    -fx-border-radius: 42;
+    -fx-border-width: 3;
+}
+
+.avatar-letter {
+    -fx-font-size: 34px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #ffffff;
+}
+
+.greeting-label {
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #ffffff;
+}
+
+.description-label {
+    -fx-font-size: 13px;
+    -fx-text-fill: #9a9db5;
+    -fx-alignment: center;
+    -fx-max-width: 280;
+}
+
+/* --- Tarjetas de instrucciones --- */
+.instructions-container {
+    -fx-padding: 6 0 6 0;
+}
+
+.instruction-card {
+    -fx-background-color: #1f2137;
+    -fx-background-radius: 16;
+    -fx-padding: 12 14;
+    -fx-spacing: 14;
+    -fx-border-color: #2e3047;
+    -fx-border-radius: 16;
+    -fx-border-width: 1;
+    -fx-alignment: CENTER_LEFT;
+}
+
+.instruction-badge {
+    -fx-min-width: 32;
+    -fx-min-height: 32;
+    -fx-max-width: 32;
+    -fx-max-height: 32;
+}
+
+.badge-circle {
+    -fx-min-width: 32;
+    -fx-min-height: 32;
+    -fx-max-width: 32;
+    -fx-max-height: 32;
+    -fx-background-radius: 16;
+}
+
+.badge-red {
+    -fx-background-color: #ff5f7e;
+}
+
+.badge-yellow {
+    -fx-background-color: #f5a623;
+}
+
+.badge-green {
+    -fx-background-color: #4cd964;
+}
+
+.badge-purple {
+    -fx-background-color: #8e6cf5;
+}
+
+.badge-number {
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #ffffff;
+}
+
+.instruction-title {
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #ffffff;
+}
+
+.instruction-text {
+    -fx-font-size: 12px;
+    -fx-text-fill: #9a9db5;
+}
+
+/* --- Botones --- */
+.primary-button {
+    -fx-background-color: transparent;
+    -fx-text-fill: #ffffff;
+    -fx-border-color: #ffffff;
+    -fx-border-radius: 24;
+    -fx-background-radius: 24;
+    -fx-border-width: 1.5;
+    -fx-padding: 14 72;
+    -fx-font-size: 15px;
+    -fx-font-weight: bold;
+    -fx-cursor: hand;
+}
+
+.primary-button:hover {
+    -fx-background-color: rgba(255, 255, 255, 0.08);
+}
+
+.primary-button:pressed {
+    -fx-background-color: rgba(255, 255, 255, 0.15);
+}
+
+.secondary-button {
+    -fx-background-color: transparent;
+    -fx-text-fill: #9a9db5;
+    -fx-border-color: #4a4d6b;
+    -fx-border-radius: 24;
+    -fx-background-radius: 24;
+    -fx-border-width: 1;
+    -fx-padding: 12 72;
+    -fx-font-size: 14px;
+    -fx-cursor: hand;
+}
+
+.secondary-button:hover {
+    -fx-background-color: rgba(255, 255, 255, 0.05);
+    -fx-text-fill: #ffffff;
+}
+
+.secondary-button:pressed {
+    -fx-background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* --- Pantalla de juego provisional --- */
+.game-root {
+    -fx-background-color: #14162b;
+    -fx-font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+}
+
+.game-title {
+    -fx-font-size: 22px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #ffffff;
+}
+
+.game-subtitle {
+    -fx-font-size: 14px;
+    -fx-text-fill: #9a9db5;
+    -fx-text-alignment: center;
+}

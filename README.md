@@ -1,6 +1,6 @@
 # Lexicron
 
-Lexicron es un juego interactivo para aprender conjugaciones de verbos en francés. El juego presenta al jugador un sujeto, un verbo y un complemento, y debe elegir la conjugación correcta del verbo entre varias opciones.
+Lexicron es un juego interactivo con interfaz gráfica en JavaFX para aprender a formar frases básicas en francés. En cada ronda el jugador recibe una frase en español y debe construir su equivalente en francés seleccionando el sujeto, verbo y complemento correctos.
 
 ## Autores
 
@@ -44,11 +44,13 @@ Compilar el proyecto:
 mvn compile
 ```
 
-Ejecutar el juego por consola:
+Ejecutar la aplicación gráfica:
 
 ```bash
-mvn exec:java -Dexec.mainClass=com.example.lexicron.LexicronApp
+mvn javafx:run
 ```
+
+El comando anterior inicia la interfaz gráfica con la pantalla de bienvenida, desde donde se puede acceder al juego.
 
 ## Tests unitarios
 
@@ -57,6 +59,16 @@ Ejecutar todos los tests:
 ```bash
 mvn test
 ```
+
+## Estructura principal
+
+- `com.example.lexicron.ui` — punto de entrada gráfico y navegación entre vistas
+- `com.example.lexicron.ui.welcome` — pantalla de bienvenida
+- `com.example.lexicron.ui.game` — pantalla del juego
+- `com.example.lexicron.ui.results` — pantalla de resultados finales
+- `com.example.lexicron.ui.viewmodel` — ViewModels de la interfaz gráfica
+- `com.example.lexicron.model` — records del dominio (`Subject`, `Verb`, `Complement`, `Round`, etc.)
+- `com.example.lexicron.service` — lógica de negocio (`RoundGenerator`, `RoundValidator`, `ScoreCalculator`, `GameSession`, etc.)
 
 ## Documentación Javadoc
 

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns="http://javafx.com/javafx/24"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.example.lexicron.ui.welcome.WelcomeController"
+      alignment="TOP_CENTER"
+      spacing="0"
+      styleClass="welcome-root">
+
+    <StackPane styleClass="header-section" prefHeight="130">
+        <VBox alignment="CENTER" spacing="6">
+            <Label text="Lexicron" styleClass="title-label"/>
+            <Label text="Aprende francés jugando" styleClass="subtitle-label"/>
+        </VBox>
+    </StackPane>
+
+    <VBox alignment="TOP_CENTER" spacing="10" styleClass="content-section" VBox.vgrow="ALWAYS">
+        <padding>
+            <Insets top="20" right="22" bottom="24" left="22"/>
+        </padding>
+
+        <StackPane styleClass="avatar-container">
+            <Region styleClass="avatar-circle"/>
+            <Label text="L" styleClass="avatar-letter"/>
+        </StackPane>
+
+        <Label text="¡Hola, aventurero!" styleClass="greeting-label"/>
+
+        <Label text="Aprende frases básicas en francés de manera divertida"
+               styleClass="description-label"
+               wrapText="true"
+               textAlignment="CENTER"/>
+
+        <VBox spacing="10" styleClass="instructions-container" VBox.vgrow="ALWAYS">
+            <HBox spacing="14" styleClass="instruction-card" alignment="CENTER_LEFT">
+                <StackPane styleClass="instruction-badge">
+                    <Region styleClass="badge-circle badge-red"/>
+                    <Label text="1" styleClass="badge-number"/>
+                </StackPane>
+                <VBox spacing="2" alignment="CENTER_LEFT">
+                    <Label text="Observa la frase" styleClass="instruction-title"/>
+                    <Label text="Te mostramos una frase en español que debes traducir al francés."
+                           styleClass="instruction-text"
+                           wrapText="true"/>
+                </VBox>
+            </HBox>
+
+            <HBox spacing="14" styleClass="instruction-card" alignment="CENTER_LEFT">
+                <StackPane styleClass="instruction-badge">
+                    <Region styleClass="badge-circle badge-yellow"/>
+                    <Label text="2" styleClass="badge-number"/>
+                </StackPane>
+                <VBox spacing="2" alignment="CENTER_LEFT">
+                    <Label text="Elige las palabras correctas" styleClass="instruction-title"/>
+                    <Label text="Haz clic en las tarjetas de palabras para construir la frase. ¡Las palabras están en desorden!"
+                           styleClass="instruction-text"
+                           wrapText="true"/>
+                </VBox>
+            </HBox>
+
+            <HBox spacing="14" styleClass="instruction-card" alignment="CENTER_LEFT">
+                <StackPane styleClass="instruction-badge">
+                    <Region styleClass="badge-circle badge-green"/>
+                    <Label text="3" styleClass="badge-number"/>
+                </StackPane>
+                <VBox spacing="2" alignment="CENTER_LEFT">
+                    <Label text="Ordena la frase completa" styleClass="instruction-title"/>
+                    <Label text="Coloca sujeto, verbo y complemento en el orden correcto dentro de las casillas."
+                           styleClass="instruction-text"
+                           wrapText="true"/>
+                </VBox>
+            </HBox>
+
+            <HBox spacing="14" styleClass="instruction-card" alignment="CENTER_LEFT">
+                <StackPane styleClass="instruction-badge">
+                    <Region styleClass="badge-circle badge-purple"/>
+                    <Label text="4" styleClass="badge-number"/>
+                </StackPane>
+                <VBox spacing="2" alignment="CENTER_LEFT">
+                    <Label text="¡Valida y gana puntos!" styleClass="instruction-title"/>
+                    <Label text="Pulsa el botón VALIDAR y descubre si tu respuesta es correcta. ¡Cada acierto suma puntos!"
+                           styleClass="instruction-text"
+                           wrapText="true"/>
+                </VBox>
+            </HBox>
+        </VBox>
+
+        <VBox spacing="12" alignment="CENTER">
+            <Button text="¡Empezar a jugar!" styleClass="primary-button" onAction="#handleStartGame"/>
+            <Button text="Ver tutorial en video" styleClass="secondary-button" onAction="#handleOpenTutorial"/>
+        </VBox>
+    </VBox>
+</VBox>

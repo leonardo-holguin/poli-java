@@ -1,18 +1,10 @@
 package com.example.lexicron;
 
-import java.io.IOException;
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.nio.file.Paths;
-import java.nio.file.StandardOpenOption;
-import java.time.LocalDateTime;
-import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
 import com.example.lexicron.model.Complement;
-import com.example.lexicron.model.Conjugation;
 import com.example.lexicron.model.GameResult;
 import com.example.lexicron.model.Round;
 import com.example.lexicron.model.RoundOptions;
@@ -22,9 +14,11 @@ import com.example.lexicron.model.ValidationResult;
 import com.example.lexicron.model.Verb;
 import com.example.lexicron.model.VerbOption;
 import com.example.lexicron.service.DataLoader;
+import com.example.lexicron.service.FrenchFormatter;
 import com.example.lexicron.service.RoundGenerator;
 import com.example.lexicron.service.RoundValidator;
 import com.example.lexicron.service.ScoreCalculator;
+import com.example.lexicron.service.ScoreSaver;
 import com.example.lexicron.service.SpanishSentenceBuilder;
 
 /**
@@ -42,7 +36,6 @@ import com.example.lexicron.service.SpanishSentenceBuilder;
 public class LexicronApp {
 
     private static final int TOTAL_ROUNDS = 5;
-    private static final Path SCORES_FILE = Paths.get("scores.txt");
 
     public static void main(String[] args) {
         DataLoader loader = new DataLoader();
@@ -55,6 +48,8 @@ public class LexicronApp {
         SpanishSentenceBuilder sentenceBuilder = new SpanishSentenceBuilder();
         RoundValidator validator = new RoundValidator();
         ScoreCalculator scoreCalculator = new ScoreCalculator();
+        FrenchFormatter frenchFormatter = new FrenchFormatter();
+        ScoreSaver scoreSaver = new ScoreSaver();
 
         List<RoundResult> roundResults = new ArrayList<>();
 
@@ -79,7 +74,7 @@ public class LexicronApp {
 
                 System.out.println("\nVerbos:");
                 List<String> verbDisplay = options.verbOptions().stream()
-                    .map(LexicronApp::displayVerbOption)
+                    .map(frenchFormatter::displayVerbOption)
                     .toList();
                 printNumbered(verbDisplay);
                 int verbChoice = readChoice(scanner, 1, options.verbOptions().size());
@@ -98,15 +93,12 @@ public class LexicronApp {
 
                 System.out.println("\n--- Resultado ronda " + roundNumber + " ---");
                 System.out.println("Sujeto: " + (result.subjectCorrect() ? "✓" : "✗") + " (correcto: " + round.subject().fr() + ")");
-                System.out.println("Verbo:  " + (result.verbCorrect() ? "✓" : "✗") + " (correcto: " + getFrenchConjugation(round.verb(), round.subject()) + ")");
+                System.out.println("Verbo:  " + (result.verbCorrect() ? "✓" : "✗") + " (correcto: " + frenchFormatter.getFrenchConjugation(round.verb(), round.subject()) + ")");
                 System.out.println("Comp.:  " + (result.complementCorrect() ? "✓" : "✗") + " (correcto: " + round.complement().fr() + ")");
                 System.out.println("Puntos: " + points);
 
                 if (!result.allCorrect()) {
-                    String subjectKey = resolveFrenchSubjectKey(round);
-                    String verbFr = getFrenchConjugation(round.verb(), round.subject());
-                    String correctSentence = subjectKey + " " + verbFr + " " + round.complement().fr();
-                    System.out.println("Frase correcta: " + correctSentence);
+                    System.out.println("Frase correcta: " + frenchFormatter.buildCorrectSentence(round));
                 }
 
                 System.out.println();
@@ -130,66 +122,10 @@ public class LexicronApp {
                 System.out.println("  Ronda " + (i + 1) + ": " + correctos + "/3 aciertos — " + rr.points() + " pts");
             }
 
-            saveScore(gameResult);
+            scoreSaver.saveScore(gameResult);
+            System.out.println("Puntaje guardado en: scores.txt");
 
             System.out.println("\n¡Gracias por jugar Lexicron!");
-        }
-    }
-
-    /**
-     * Obtiene la forma conjugada en francés de un verbo para un sujeto dado.
-     *
-     * @param verb    el verbo en infinitivo
-     * @param subject el sujeto para conjugar
-     * @return la forma conjugada en francés, o el infinitivo si no hay conjugación
-     */
-    private static String getFrenchConjugation(Verb verb, Subject subject) {
-        String key = resolveSubjectKey(subject, verb);
-        Conjugation conj = verb.conjugations().get(key);
-        return conj != null ? conj.fr() : verb.infinitive();
-    }
-
-    private static String resolveSubjectKey(Subject subject, Verb verb) {
-        String key = subject.fr();
-        if ("je".equals(key) && verb.conjugations().get("je") == null
-                && verb.conjugations().containsKey("j'")) {
-            return "j'";
-        }
-        return key;
-    }
-
-    /**
-     * Genera el texto a mostrar para una opción de verbo.
-     * Conjuga el verbo según el sujeto asociado y muestra la forma conjugada.
-     *
-     * @param vo la opción de verbo con su sujeto asociado
-     * @return el texto formateado (ej: "regarde (elle)")
-     */
-    private static String displayVerbOption(VerbOption vo) {
-        return getFrenchConjugation(vo.verb(), vo.conjugatedFor());
-    }
-
-    /**
-     * Resuelve la clave de sujeto correcta para la frase en francés,
-     * usando {@code j'} cuando el verbo no tiene conjugación para {@code je}.
-     */
-    private static String resolveFrenchSubjectKey(Round round) {
-        return resolveSubjectKey(round.subject(), round.verb());
-    }
-
-    /**
-     * Guarda el puntaje final en el archivo de puntuaciones.
-     *
-     * @param gameResult resultado de la partida
-     */
-    private static void saveScore(GameResult gameResult) {
-        try {
-            String timestamp = LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss"));
-            String line = timestamp + " | Puntaje: " + gameResult.totalScore() + "/" + (TOTAL_ROUNDS * 100) + "\n";
-            Files.writeString(SCORES_FILE, line, StandardOpenOption.CREATE, StandardOpenOption.APPEND);
-            System.out.println("Puntaje guardado en: " + SCORES_FILE.toAbsolutePath());
-        } catch (IOException e) {
-            System.err.println("No se pudo guardar el puntaje: " + e.getMessage());
         }
     }
 

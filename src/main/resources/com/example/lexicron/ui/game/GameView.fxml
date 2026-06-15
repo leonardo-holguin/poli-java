@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns="http://javafx.com/javafx/24"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.example.lexicron.ui.game.GameController"
+      alignment="TOP_CENTER"
+      spacing="0"
+      styleClass="game-root">
+
+    <padding>
+        <Insets top="20" right="20" bottom="24" left="20"/>
+    </padding>
+
+    <!-- Barra superior -->
+    <HBox styleClass="game-header" alignment="CENTER" spacing="12">
+        <Label text="Lexicron" styleClass="game-title"/>
+        <HBox styleClass="progress-box" alignment="CENTER" spacing="8" HBox.hgrow="ALWAYS">
+            <ProgressBar fx:id="progressBar" styleClass="game-progress-bar" progress="0"/>
+            <Label fx:id="roundLabel" text="1/5" styleClass="game-round-label"/>
+        </HBox>
+        <Label fx:id="scoreLabel" text="★ 0 pts" styleClass="game-score-label"/>
+    </HBox>
+
+    <!-- Frase a traducir -->
+    <VBox styleClass="sentence-panel" alignment="CENTER_LEFT" spacing="6">
+        <Label text="Traduce esta frase al francés:" styleClass="sentence-instruction"/>
+        <Label fx:id="spanishSentenceLabel" text="Yo veo una película" styleClass="sentence-text" wrapText="true"/>
+    </VBox>
+
+    <Region fx:id="feedbackSpacer" prefHeight="20" managed="false" visible="false"/>
+
+    <!-- Banner de feedback -->
+    <VBox fx:id="feedbackBanner" styleClass="feedback-banner" alignment="CENTER_LEFT" spacing="4" managed="false" visible="false">
+        <Label fx:id="feedbackTitle" text="" styleClass="feedback-title"/>
+        <Label fx:id="feedbackMessage" text="" styleClass="feedback-message" wrapText="true"/>
+    </VBox>
+
+    <!-- Banco de palabras -->
+    <Label fx:id="wordBankLabel" text="Haz clic en las palabras para armar la frase:" styleClass="section-label"/>
+    <FlowPane fx:id="wordBankPane" styleClass="word-bank" hgap="10" vgap="10"/>
+
+    <!-- Casillas de respuesta -->
+    <Label text="Coloca la frase en orden:" styleClass="section-label"/>
+    <HBox styleClass="slots-container" spacing="12" alignment="CENTER">
+        <VBox fx:id="subjectSlotBox" styleClass="slot-box" alignment="CENTER" HBox.hgrow="ALWAYS">
+            <Label text="Sujeto" styleClass="slot-label"/>
+            <Label fx:id="subjectSlotLabel" styleClass="slot-word" text=""/>
+        </VBox>
+        <VBox fx:id="verbSlotBox" styleClass="slot-box" alignment="CENTER" HBox.hgrow="ALWAYS">
+            <Label text="Verbo" styleClass="slot-label"/>
+            <Label fx:id="verbSlotLabel" styleClass="slot-word" text=""/>
+        </VBox>
+        <VBox fx:id="complementSlotBox" styleClass="slot-box" alignment="CENTER" HBox.hgrow="ALWAYS">
+            <Label text="Complemento" styleClass="slot-label"/>
+            <Label fx:id="complementSlotLabel" styleClass="slot-word" text=""/>
+        </VBox>
+    </HBox>
+
+    <!-- Botones VALIDAR / CONTINUAR -->
+    <Button fx:id="validateButton" text="VALIDAR" styleClass="validate-button" onAction="#handleValidate" VBox.vgrow="NEVER"/>
+    <Button fx:id="continueButton" text="CONTINUAR →" styleClass="continue-button" onAction="#handleContinue" managed="false" visible="false" VBox.vgrow="NEVER"/>
+</VBox>
